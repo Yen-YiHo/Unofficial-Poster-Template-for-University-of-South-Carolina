@@ -3,7 +3,7 @@
 
 A fork of Gemini. Also available on Overleaf.
 
-![gemini_cam](https://user-images.githubusercontent.com/11074066/199757993-851d5934-b7d5-4805-a666-704cc9b7c799.png)
+![gemini_UofSC](https://people.stat.sc.edu/hoyen/Unofficial_Poster_Template_for_University_of_South_Carolina.pdf)
 
 ## Dependencies
 
