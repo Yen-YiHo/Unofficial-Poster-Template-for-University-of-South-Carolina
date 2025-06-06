@@ -1,8 +1,7 @@
 % Unofficial University of South Carolina Poster Template
-% xxxxx
+%https://people.stat.sc.edu/hoyen/Unofficial_Poster_Template_for_University_of_South_Carolina.jpg
 % a fork of https://github.com/anishathalye/gemini
 % also refer to https://github.com/k4rtik/uchicago-poster
-
 \documentclass[final]{beamer}
 
 % ====================
@@ -21,6 +20,7 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
+\usepackage{hyperref}
 
 % ====================
 % Lengths
@@ -49,18 +49,19 @@
 % Footer (optional)
 % ====================
 
-\footercontent{
-  \href{https://www.example.com}{https://www.example.com} \hfill
-  ABC Conference 2025, New York --- XYZ-1234 \hfill
-  \href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+%\footercontent{
+%  \href{https://www.example.com}{https://www.example.com} \hfill
+%  ABC Conference 2025, New York --- XYZ-1234 \hfill
+ % \href{mailto:alyssa.p.hacker@example.com}{hoyen@stat.sc.edu}}
 % (can be left out to remove footer)
 
 % ====================
 % Logo (optional)
 % ====================
 
-% use this to include logos on the left and/or right side of the header:
-\logoright{\includegraphics[height=7cm]{logos/usc_logo.eps}}
+%use this to include logos on the left and/or right side of the header:
+
+%\logoright{\includegraphics[height=7cm]{logos/usc_logo.eps}}
 % \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
 
 % ====================
@@ -70,7 +71,16 @@
 \begin{document}
 
 % Refer to https://github.com/k4rtik/uchicago-poster
-% logo: https://www.cam.ac.uk/brand-resources/about-the-logo/logo-downloads
+% logo: https://sc.edu/about/offices_and_divisions/communications/toolbox/visuals/logos/
+
+\addtobeamertemplate{headline}{}
+{
+    \begin{tikzpicture}[remember picture,overlay]
+      \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=1.0cm]current page.north west)
+      {\includegraphics[height=4.5cm]{logos/usc_logo.eps}}; 
+    \end{tikzpicture}
+}
+
 
 \begin{frame}[t]
 \begin{columns}[t]
@@ -318,13 +328,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel dapibus era
   \begin{block}{References}
 
     \nocite{*}
-    \footnotesize{\bibliographystyle{plainnat}\bibliography{poster}}
+  \bibliographystyle{plain}
+   \bibliography{poster}
+
 
   \end{block}
 
 \end{column}
 
-\separatorcolumn
+%\separatorcolumn
 \end{columns}
 \end{frame}
 
