@@ -1,7 +1,7 @@
 # Unofficial Poster Template for University of South Carolina
  [![Overleaf Template](https://img.shields.io/badge/Overleaf-Template-success?logo=overleaf)]
 
-A fork of Gemini.
+A fork of Gemini and can be easily imported to Overleaf. 
 
 ![gemini_UofSC](https://people.stat.sc.edu/hoyen/Unofficial_Poster_Template_for_University_of_South_Carolina.jpg)
 
